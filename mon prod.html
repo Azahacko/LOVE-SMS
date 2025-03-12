@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour toi, Françoise ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1f4d;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>❤️ Françoise, écoute ce que mon cœur veut te dire ❤️</h1>
+    <button onclick="changeText()">Click👆 pour ressentir mon amour</button>
+    <p id="message"></p>
+
+    <script>
+        let texts = [
+            "Françoise, tu es unique et précieuse 🫶🏻", 
+            "Tu es l'étoile qui illumine ma vie chaque jour", 
+            "Il n'y a personne comme toi, et c'est ce qui te rend si spéciale", 
+            "Tu es un trésor rare et inestimable que j’ai la chance d’avoir", 
+            "Ta présence dans ma vie fait toute la différence", 
+            "Tu es ma source de bonheur et mon inspiration quotidienne", 
+            "Tu mérites tout l’amour et la douceur du monde", 
+            "Ta gentillesse et ta lumière rayonnent comme le soleil", 
+            "Tu es une perle rare, un véritable bijou que je chéris", 
+            "Tu es la lumière qui éclaire mes jours les plus sombres 💖"
+        ];
+        let index = 0;
+
+        function changeText() {
+            document.getElementById("message").innerText = texts[index];
+            index = (index + 1) % texts.length;
+        }
+    </script>
+    
+    <footer>
+        <p>&copy; 2025 AzahackO. Pour Françoise, avec tout mon amour. ❤️</p>
+    </footer>
+</body>
+</html>
